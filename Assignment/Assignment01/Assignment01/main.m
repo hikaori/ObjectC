@@ -1,6 +1,6 @@
 //
 //  main.m
-//  Assignment
+//  Assignment01
 //
 //  Created by kaori hirata on 2017-08-17.
 //  Copyright © 2017 kaori hirata. All rights reserved.
@@ -22,7 +22,7 @@ int main(int argc, const char * argv[]) {
         NSString *inputNum = [NSString stringWithUTF8String:inputnum];
         
         while([inputNum intValue] != 7){
-        
+            
             if([inputNum intValue] == 1){
                 //1. Uppercase
                 printf("Input a string(lower):");

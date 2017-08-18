@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Uppercase.xcscheme</key>
+		<key>Assignment01.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,7 +12,7 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>DCDC3C8C1F45879E00140A6D</key>
+		<key>DCDC3CDB1F46726800140A6D</key>
 		<dict>
 			<key>primary</key>
 			<true/>

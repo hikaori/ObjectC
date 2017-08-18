@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "DCDC3C8C1F45879E00140A6D"
-               BuildableName = "Uppercase"
-               BlueprintName = "Uppercase"
-               ReferencedContainer = "container:Uppercase.xcodeproj">
+               BlueprintIdentifier = "DCDC3CDB1F46726800140A6D"
+               BuildableName = "Assignment01"
+               BlueprintName = "Assignment01"
+               ReferencedContainer = "container:Assignment01.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,10 +32,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "DCDC3C8C1F45879E00140A6D"
-            BuildableName = "Uppercase"
-            BlueprintName = "Uppercase"
-            ReferencedContainer = "container:Uppercase.xcodeproj">
+            BlueprintIdentifier = "DCDC3CDB1F46726800140A6D"
+            BuildableName = "Assignment01"
+            BlueprintName = "Assignment01"
+            ReferencedContainer = "container:Assignment01.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -55,10 +55,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "DCDC3C8C1F45879E00140A6D"
-            BuildableName = "Uppercase"
-            BlueprintName = "Uppercase"
-            ReferencedContainer = "container:Uppercase.xcodeproj">
+            BlueprintIdentifier = "DCDC3CDB1F46726800140A6D"
+            BuildableName = "Assignment01"
+            BlueprintName = "Assignment01"
+            ReferencedContainer = "container:Assignment01.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -74,10 +74,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "DCDC3C8C1F45879E00140A6D"
-            BuildableName = "Uppercase"
-            BlueprintName = "Uppercase"
-            ReferencedContainer = "container:Uppercase.xcodeproj">
+            BlueprintIdentifier = "DCDC3CDB1F46726800140A6D"
+            BuildableName = "Assignment01"
+            BlueprintName = "Assignment01"
+            ReferencedContainer = "container:Assignment01.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
