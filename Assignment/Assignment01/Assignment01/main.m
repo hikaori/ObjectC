@@ -8,113 +8,71 @@
 
 #import <Foundation/Foundation.h>
 
+NSString *getUserInput(int maxLength, NSString *prompt){
+    if(maxLength < 1){
+        maxLength = 255;
+    }
+    NSLog(@"%@",prompt);
+    char inputChars[maxLength];
+    char *result = fgets(inputChars,maxLength,stdin);
+    if(result != NULL){
+        return [[NSString stringWithUTF8String:inputChars] stringByTrimmingCharactersInSet:
+               [NSCharacterSet whitespaceAndNewlineCharacterSet]];
+    }
+    return nil;
+}
+
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        // insert code here...
-        NSLog(@"Hello, World!");
-        char inputnum[3]; //Number + \n +\0 = 3
-        char inputnum2[3];
-        char inputchars[255];
         
-        
-        printf("Select Number 1-6 (exit:7)");
-        fgets(inputnum,3,stdin);
-        NSString *inputNum = [NSString stringWithUTF8String:inputnum];
-        
-        while([inputNum intValue] != 7){
-            
-            if([inputNum intValue] == 1){
+        while(1){
+            NSString *strInput = getUserInput(255, @"\nEnter your String: ('q' to quit)");
+            if ([strInput isEqualToString:@"q"]){break;}
+            while(1){
+                NSString *option = getUserInput(10, @"\nChoose one of the following options:\n1. Uppercase\n2. Lowercase\n3. Numberize\n4. Canadianize\n5. Respond\n6. De-Space-It\n7. Word Count\n8. Remove Punctuations\n9. Done\n");
                 //1. Uppercase
-                printf("Input a string(lower):");
-                fgets(inputchars,255,stdin);
-                NSString *inputString = [NSString stringWithCString:inputchars encoding:NSASCIIStringEncoding];
-                NSString *upperString = [inputString uppercaseString];
-                NSLog(@"your string of Upper is %@\n",upperString);
-                
-                printf("Select Number 1-6 (exit:7)");
-                fgets(inputnum2,3,stdin);
-                NSString *inputNum2 = [NSString stringWithUTF8String:inputnum2];
-                inputNum = inputNum2;
-            }
-            
-            else if([inputNum intValue] == 2){
+                if([option isEqualToString:@"1"]){
+                    NSLog(@"%@",[strInput uppercaseString]);
+                }
+                else if([option isEqualToString:@"2"]){
                 //2. Lowercase
-                printf("Input a string(Upper):");
-                fgets(inputchars,255,stdin);
-                NSString *inputLowerString = [NSString stringWithCString:inputchars encoding:NSASCIIStringEncoding];
-                NSString *lowerString = [inputLowerString lowercaseString];
-                NSLog(@"your string of lower is %@\n",lowerString);
-                
-                printf("Select Number 1-6 (exit:7)");
-                fgets(inputnum2,3,stdin);
-                NSString *inputNum2 = [NSString stringWithUTF8String:inputnum2];
-                inputNum = inputNum2;
-            }
-            
-            else if([inputNum intValue] == 3){
+                    NSLog(@"%@",[strInput lowercaseString]);
+                }
+                else if([option isEqualToString:@"3"]){
                 //3. Numberize
-                printf("Input Number:");
-                fgets(inputchars,255,stdin);
-                NSString *inputNumString = [NSString stringWithCString:inputchars encoding:NSASCIIStringEncoding];
-                NSInteger intNum = [inputNumString integerValue];
-                NSLog(@"your Number is %zd\n",intNum);
-                
-                printf("Select Number 1-6 (exit:7)");
-                fgets(inputnum2,3,stdin);
-                NSString *inputNum2 = [NSString stringWithUTF8String:inputnum2];
-                inputNum = inputNum2;
-            }
-            
-            else if([inputNum intValue] == 4){
+                    NSNumber *number = [[[NSNumberFormatter alloc]init] numberFromString:strInput];
+                    if(number != nil){
+                        NSLog(@"%ld", [number integerValue]);
+                    }
+                    else{
+                        NSLog(@"%@", @"Input Cannot Be Converted to Integer.");
+                    }
+                }
+                else if([option isEqualToString:@"4"]){
                 //4. Canadianize
-                printf("Input Sentence:");
-                fgets(inputchars,255,stdin);
-                NSMutableString *inputSentence = [NSMutableString stringWithCString:inputchars encoding:NSASCIIStringEncoding];
-                [inputSentence insertString:@", eh?" atIndex:5];
-                NSLog(@"Input Sentence + ',eh?' is %@\n",inputSentence);
-                
-                printf("Select Number 1-6 (exit:7)");
-                fgets(inputnum2,3,stdin);
-                NSString *inputNum2 = [NSString stringWithUTF8String:inputnum2];
-                inputNum = inputNum2;
-            }
-            
-            else if([inputNum intValue] == 5){
+                    NSLog(@"%@", [strInput stringByAppendingString:@", eh?"]);
+                }
                 //5. Respond
-                printf("Input Sententce with mark :");
-                fgets(inputchars,255,stdin);
-                NSString *inputWithMark = [NSString stringWithCString:inputchars encoding:NSASCIIStringEncoding];
-                inputWithMark = [inputWithMark stringByReplacingOccurrencesOfString:@"\n" withString:@""];
-                inputWithMark = [inputWithMark stringByTrimmingCharactersInSet:[NSCharacterSet newlineCharacterSet]];
-                if([inputWithMark hasSuffix:@"?"]== true){
-                    NSLog(@"I don't know");
+                else if([option isEqualToString:@"4"]){
+                    if([strInput characterAtIndex:[strInput length]-1] == '?'){
+                        NSLog(@"%@",@"I don't know");
+                    }
+                    else if([strInput characterAtIndex:[strInput length]-1] == '!'){
+                        NSLog(@"%@",@"calm down");
+                    }
                 }
-                else if ([inputWithMark hasSuffix:@"!"] == true){
-                    NSLog(@"Whoa, calm down!");
-                }
-                
-                printf("Select Number 1-6 (exit:7)");
-                fgets(inputnum2,3,stdin);
-                NSString *inputNum2 = [NSString stringWithUTF8String:inputnum2];
-                inputNum = inputNum2;
-            }
-            
-            else if([inputNum intValue] == 6){
                 //6. De-Space-It
-                printf("Input Sentence with space :");
-                fgets(inputchars,255,stdin);
-                NSString *inputWithSpace = [NSString stringWithCString:inputchars encoding:NSASCIIStringEncoding];
-                inputWithSpace = [inputWithSpace stringByReplacingOccurrencesOfString:@" " withString:@"-"];
-                NSLog(@"input Sentence with space: %@",inputWithSpace);
-                
-                printf("Select Number 1-6 (exit:7)");
-                fgets(inputnum2,3,stdin);
-                NSString *inputNum2 = [NSString stringWithUTF8String:inputnum2];
-                inputNum = inputNum2;
-            }
-            
-            else if([inputNum intValue] == 7){
-                break;
+                else if([option isEqualToString:@"6"]){
+                    NSLog(@"%@",[strInput stringByReplacingOccurrencesOfString:@" " withString:@"-"]);
+                }
+                //9. Done
+                else if([option isEqualToString:@"9"]){
+                    NSLog(@"Next String!");
+                    break;
+                }
+                else{
+                    NSLog(@"Not available.");
+                }
             }
         }
     }
