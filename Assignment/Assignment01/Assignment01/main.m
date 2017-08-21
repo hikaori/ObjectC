@@ -65,6 +65,15 @@ int main(int argc, const char * argv[]) {
                 else if([option isEqualToString:@"6"]){
                     NSLog(@"%@",[strInput stringByReplacingOccurrencesOfString:@" " withString:@"-"]);
                 }
+                // 7.Count Words
+                else if ([option isEqualToString:@"7"]) {
+                    NSLog(@"%ld words.", [[strInput componentsSeparatedByString:@" "] count]);
+                }
+                //8.Remove Punctuations
+                else if ([option isEqualToString:@"8"]) {
+                    NSCharacterSet *illegal = [NSCharacterSet punctuationCharacterSet];
+                    NSLog(@"%@", [[strInput componentsSeparatedByCharactersInSet: illegal] componentsJoinedByString:@""]);
+                }
                 //9. Done
                 else if([option isEqualToString:@"9"]){
                     NSLog(@"Next String!");
