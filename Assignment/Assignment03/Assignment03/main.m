@@ -44,6 +44,8 @@ int main(int argc, const char * argv[]) {
                         scoreCount.wrong++;
                     }
             }
+            
+            // PRINT OUT 'score: __ right, __ wrong ---- __%'
             [scoreCount getScore];
         }
     }
