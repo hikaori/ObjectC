@@ -10,10 +10,9 @@
 
 @implementation ScoreKeeper
 
-- (double) getScore{
+- (void) getScore{
     float result =self.right/(self.right + self.wrong) * 100;
-    NSLog(@"result :%g",result);
-    return result;
+    NSLog(@"score: %g right, %g wrong ---- %g\uFF05",self.right,self.wrong,result);
 }
 
 @end

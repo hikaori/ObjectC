@@ -44,7 +44,7 @@ int main(int argc, const char * argv[]) {
                         scoreCount.wrong++;
                     }
             }
-            NSLog(@"score: %g right, %g wrong ---- %g\uFF05",scoreCount.right,scoreCount.wrong,scoreCount.getScore);
+            [scoreCount getScore];
         }
     }
     return 0;

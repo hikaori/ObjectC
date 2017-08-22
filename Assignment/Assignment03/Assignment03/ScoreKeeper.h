@@ -13,6 +13,6 @@
 @property double right;
 @property double wrong;
 
-- (double) getScore;
+- (void) getScore;
 
 @end
