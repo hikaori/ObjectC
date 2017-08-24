@@ -11,15 +11,20 @@
 @implementation AdditionQuestion
 
 -(instancetype)init{
-    if (self = [super init]) {
-        int maxNum = 100;
-        int minNum = 10;
-        NSInteger randamNum1 = arc4random_uniform(maxNum +1 - minNum ) + minNum;
-        NSInteger randamNum2 = arc4random_uniform(maxNum +1 - minNum ) + minNum;
-        NSLog(@"%ld + %ld",randamNum1,randamNum2);
-        _answer = randamNum1 + randamNum2;
+    self = [super init]
+        if (self){
+            _num1 = arc4random_uniform(100);
+            _num2 = arc4random_uniform(100);
+            NSInteger randamNum1 = arc4random_uniform(maxNum +1 - minNum ) + minNum;
+            NSInteger randamNum2 = arc4random_uniform(maxNum +1 - minNum ) + minNum;
+            NSLog(@"%ld + %ld",randamNum1,randamNum2);
+            _answer = randamNum1 + randamNum2;
     }
     return self;
+}
+
+-(BOOL) isCorrect: (NSString *) answer{
+    return [[NSString stringWithFormat:@"%.02f",self.answer] isEqualToString:[NSString stringWithFormat:@"%.02f",[answer floatValue]]];
 }
 
 @end

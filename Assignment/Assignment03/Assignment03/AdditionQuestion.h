@@ -10,7 +10,11 @@
 
 @interface AdditionQuestion : NSObject
 
-@property (nonatomic,assign)NSString *question;
-@property (nonatomic,assign)NSInteger answer;
+@property (nonatomic)NSString *question;
+@property (assign)float answer;
+@property (assign)float num1;
+@property (assign)float num2;
+
+@property 
 
 @end
