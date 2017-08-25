@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "DC9207A31F4B4213005BE083"
-               BuildableName = "Assignment03"
-               BlueprintName = "Assignment03"
-               ReferencedContainer = "container:Assignment03.xcodeproj">
+               BlueprintIdentifier = "DCEA1D2C1F4FDF6200D4CBD3"
+               BuildableName = "Assignment05"
+               BlueprintName = "Assignment05"
+               ReferencedContainer = "container:Assignment05.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,10 +32,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "DC9207A31F4B4213005BE083"
-            BuildableName = "Assignment03"
-            BlueprintName = "Assignment03"
-            ReferencedContainer = "container:Assignment03.xcodeproj">
+            BlueprintIdentifier = "DCEA1D2C1F4FDF6200D4CBD3"
+            BuildableName = "Assignment05"
+            BlueprintName = "Assignment05"
+            ReferencedContainer = "container:Assignment05.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -55,10 +55,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "DC9207A31F4B4213005BE083"
-            BuildableName = "Assignment03"
-            BlueprintName = "Assignment03"
-            ReferencedContainer = "container:Assignment03.xcodeproj">
+            BlueprintIdentifier = "DCEA1D2C1F4FDF6200D4CBD3"
+            BuildableName = "Assignment05"
+            BlueprintName = "Assignment05"
+            ReferencedContainer = "container:Assignment05.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -74,10 +74,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "DC9207A31F4B4213005BE083"
-            BuildableName = "Assignment03"
-            BlueprintName = "Assignment03"
-            ReferencedContainer = "container:Assignment03.xcodeproj">
+            BlueprintIdentifier = "DCEA1D2C1F4FDF6200D4CBD3"
+            BuildableName = "Assignment05"
+            BlueprintName = "Assignment05"
+            ReferencedContainer = "container:Assignment05.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

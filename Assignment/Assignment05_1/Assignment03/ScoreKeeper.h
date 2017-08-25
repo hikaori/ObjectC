@@ -10,10 +10,10 @@
 
 @interface ScoreKeeper : NSObject
 
-@property(assign) double right;
-@property(assign) double wrong;
-@property (nonatomic) NSString *log;
+@property (assign) int right;
+@property (assign) int wrong;
+@property (nonatomic) NSString *percentage;
 
-- (void) getScore;
+- (void) printCurrentState;
 
 @end

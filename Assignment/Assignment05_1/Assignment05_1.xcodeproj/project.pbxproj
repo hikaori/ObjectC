@@ -8,9 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		DC9207A81F4B4213005BE083 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DC9207A71F4B4213005BE083 /* main.m */; };
-		DC9207C61F4B600B005BE083 /* AdditionQuestion.m in Sources */ = {isa = PBXBuildFile; fileRef = DC9207C51F4B600B005BE083 /* AdditionQuestion.m */; };
+		DC9207C61F4B600B005BE083 /* Question.m in Sources */ = {isa = PBXBuildFile; fileRef = DC9207C51F4B600B005BE083 /* Question.m */; };
 		DC9207C91F4B647F005BE083 /* InputHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = DC9207C81F4B647F005BE083 /* InputHandler.m */; };
 		DC9207D21F4BA117005BE083 /* ScoreKeeper.m in Sources */ = {isa = PBXBuildFile; fileRef = DC9207D11F4BA117005BE083 /* ScoreKeeper.m */; };
+		DC9207F11F4F90D2005BE083 /* QuestionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DC9207F01F4F90D2005BE083 /* QuestionManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,14 +27,16 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		DC9207A41F4B4213005BE083 /* Assignment03 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Assignment03; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC9207A41F4B4213005BE083 /* Assignment05_1 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Assignment05_1; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC9207A71F4B4213005BE083 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		DC9207C41F4B600B005BE083 /* AdditionQuestion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdditionQuestion.h; sourceTree = "<group>"; };
-		DC9207C51F4B600B005BE083 /* AdditionQuestion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdditionQuestion.m; sourceTree = "<group>"; };
+		DC9207C41F4B600B005BE083 /* Question.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Question.h; sourceTree = "<group>"; };
+		DC9207C51F4B600B005BE083 /* Question.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Question.m; sourceTree = "<group>"; };
 		DC9207C71F4B647F005BE083 /* InputHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputHandler.h; sourceTree = "<group>"; };
 		DC9207C81F4B647F005BE083 /* InputHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InputHandler.m; sourceTree = "<group>"; };
 		DC9207D01F4BA117005BE083 /* ScoreKeeper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScoreKeeper.h; sourceTree = "<group>"; };
 		DC9207D11F4BA117005BE083 /* ScoreKeeper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScoreKeeper.m; sourceTree = "<group>"; };
+		DC9207EF1F4F90D2005BE083 /* QuestionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionManager.h; sourceTree = "<group>"; };
+		DC9207F01F4F90D2005BE083 /* QuestionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,7 +53,7 @@
 		DC92079B1F4B4213005BE083 = {
 			isa = PBXGroup;
 			children = (
-				DC9207A61F4B4213005BE083 /* Assignment03 */,
+				DC9207A61F4B4213005BE083 /* Assignment05 */,
 				DC9207A51F4B4213005BE083 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -58,12 +61,12 @@
 		DC9207A51F4B4213005BE083 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DC9207A41F4B4213005BE083 /* Assignment03 */,
+				DC9207A41F4B4213005BE083 /* Assignment05_1 */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		DC9207A61F4B4213005BE083 /* Assignment03 */ = {
+		DC9207A61F4B4213005BE083 /* Assignment05 */ = {
 			isa = PBXGroup;
 			children = (
 				DC9207A71F4B4213005BE083 /* main.m */,
@@ -71,18 +74,21 @@
 				DC9207D11F4BA117005BE083 /* ScoreKeeper.m */,
 				DC9207C71F4B647F005BE083 /* InputHandler.h */,
 				DC9207C81F4B647F005BE083 /* InputHandler.m */,
-				DC9207C41F4B600B005BE083 /* AdditionQuestion.h */,
-				DC9207C51F4B600B005BE083 /* AdditionQuestion.m */,
+				DC9207C41F4B600B005BE083 /* Question.h */,
+				DC9207C51F4B600B005BE083 /* Question.m */,
+				DC9207EF1F4F90D2005BE083 /* QuestionManager.h */,
+				DC9207F01F4F90D2005BE083 /* QuestionManager.m */,
 			);
+			name = Assignment05;
 			path = Assignment03;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		DC9207A31F4B4213005BE083 /* Assignment03 */ = {
+		DC9207A31F4B4213005BE083 /* Assignment05_1 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DC9207AB1F4B4213005BE083 /* Build configuration list for PBXNativeTarget "Assignment03" */;
+			buildConfigurationList = DC9207AB1F4B4213005BE083 /* Build configuration list for PBXNativeTarget "Assignment05_1" */;
 			buildPhases = (
 				DC9207A01F4B4213005BE083 /* Sources */,
 				DC9207A11F4B4213005BE083 /* Frameworks */,
@@ -92,9 +98,9 @@
 			);
 			dependencies = (
 			);
-			name = Assignment03;
+			name = Assignment05_1;
 			productName = Assignment03;
-			productReference = DC9207A41F4B4213005BE083 /* Assignment03 */;
+			productReference = DC9207A41F4B4213005BE083 /* Assignment05_1 */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -113,7 +119,7 @@
 					};
 				};
 			};
-			buildConfigurationList = DC92079F1F4B4213005BE083 /* Build configuration list for PBXProject "Assignment03" */;
+			buildConfigurationList = DC92079F1F4B4213005BE083 /* Build configuration list for PBXProject "Assignment05_1" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -125,7 +131,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				DC9207A31F4B4213005BE083 /* Assignment03 */,
+				DC9207A31F4B4213005BE083 /* Assignment05_1 */,
 			);
 		};
 /* End PBXProject section */
@@ -135,10 +141,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC9207F11F4F90D2005BE083 /* QuestionManager.m in Sources */,
 				DC9207D21F4BA117005BE083 /* ScoreKeeper.m in Sources */,
 				DC9207A81F4B4213005BE083 /* main.m in Sources */,
 				DC9207C91F4B647F005BE083 /* InputHandler.m in Sources */,
-				DC9207C61F4B600B005BE083 /* AdditionQuestion.m in Sources */,
+				DC9207C61F4B600B005BE083 /* Question.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,7 +260,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		DC92079F1F4B4213005BE083 /* Build configuration list for PBXProject "Assignment03" */ = {
+		DC92079F1F4B4213005BE083 /* Build configuration list for PBXProject "Assignment05_1" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DC9207A91F4B4213005BE083 /* Debug */,
@@ -262,7 +269,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DC9207AB1F4B4213005BE083 /* Build configuration list for PBXNativeTarget "Assignment03" */ = {
+		DC9207AB1F4B4213005BE083 /* Build configuration list for PBXNativeTarget "Assignment05_1" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DC9207AC1F4B4213005BE083 /* Debug */,
