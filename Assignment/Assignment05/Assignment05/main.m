@@ -14,17 +14,21 @@
 #import "QuestionFactory.h"
 
 
+
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         
         NSLog(@"MATHS!");
         ScoreKeeper *score = [[ScoreKeeper alloc] init];
-        QuestionFactory *questionfactory = [[QuestionFactory alloc]init];
+        QuestionFactory *questionFactory = [[QuestionFactory alloc]init];
+        [questionFactory generateRandomQuestion];
+        
         // CREATE AREA TO STORE QUESTIONS
         QuestionManager *questionMG = [[QuestionManager alloc]init];
         while(1) {
             
             Question *q1 = [[Question alloc] init];
+            q1 = [questionFactory generateRandomQuestion];
             // STORE QUESTION INTO ARRAY
             [questionMG.questions addObject:q1];
             NSLog(@"%@", [q1 question]);

@@ -1,15 +1,14 @@
 //
-//  SubtractionQuestion.m
+//  AdditionQuestion.m
 //  Assignment05
 //
-//  Created by kaori hirata on 2017-08-24.
+//  Created by kaori hirata on 2017-08-25.
 //  Copyright © 2017 kaori hirata. All rights reserved.
 //
 
-#import "SubtractionQuestion.h"
-#import "Question.h"
+#import "AdditionQuestion.h"
 
-@implementation SubtractionQuestion
+@implementation AdditionQuestion
 
 - (instancetype)init {
     if (self = [super init]) {
@@ -25,6 +24,5 @@
     super.question = [NSString stringWithFormat: @"%ld - %ld = ?",(long)super.rightValue, (long)super.leftValue];
     // set super.question here
 }
-
 
 @end

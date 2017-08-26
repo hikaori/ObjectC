@@ -14,16 +14,17 @@
 {
     self = [super init];
     if (self) {
+        _total = 0;
         _questions = [[NSMutableArray alloc]init];
     }
     return self;
 }
 
 - (NSString*) timeOutputWithelapsedtime :(int)elapsedtime{
-    int total = total + elapsedtime;
-    NSLog(@"total ====== %d  elapsedtime=======%d",total,elapsedtime);
-    int average = total/_questions.count;
-    NSString *result = [NSString stringWithFormat:@"total time :%ds  average time:%ds" ,total,average];
+    _total = _total + elapsedtime;
+    NSLog(@"total ====== %d  elapsedtime=======%d",_total,elapsedtime);
+    int average = _total/_questions.count;
+    NSString *result = [NSString stringWithFormat:@"total time :%ds  average time:%ds" ,_total,average];
     return result;
 }
 @end

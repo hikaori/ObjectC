@@ -10,6 +10,7 @@
 
 @interface QuestionManager : NSObject
 @property NSMutableArray* questions;
+@property int total;
 
 - (instancetype)init;
 - (NSString*) timeOutputWithelapsedtime :(int)elapsedtime;
