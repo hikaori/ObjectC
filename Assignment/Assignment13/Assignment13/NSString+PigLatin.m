@@ -42,9 +42,7 @@
                 NSLog(@"%@",resutl);
                 break;
             }
-
         }
     }
-    
 }
 @end

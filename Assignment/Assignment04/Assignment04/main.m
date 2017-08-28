@@ -35,11 +35,19 @@ int main(int argc, const char * argv[]) {
                 }
                 else{
                     NSString *InputName = [InputCollector getUserInput:20 prompt:@"enter your name\n"];
+                    
                     Contact *newcontact = [[Contact alloc]init];
-                    NSString *InputPhonelabel = [InputCollector getUserInput:20 prompt:@"enter phone InputPhonelabel\n"];
-                    NSString *InputPhoneNum = [InputCollector getUserInput:20 prompt:@"enter phone InputPhoneNum ex)444-555-3123\n"];
-                    [newcontact setPhonelabel:InputPhonelabel];
-                    [newcontact setPnoneNum:InputPhoneNum];
+                    
+                    while (true) {
+                        NSString *phoneInput = [InputCollector getUserInput:20 prompt:@"Do you want to add a phone number? (y/n)\n"];
+                        if([phoneInput isEqualToString:@"y"]){
+                            NSInteger InputPhonelabel = [[InputCollector getUserInput:20 prompt:@"Select the following option(0: Mobile, 1: Work, 2: Home): "] integerValue];
+                            NSString *InputPhoneNum = [InputCollector getUserInput:20 prompt:@"enter phone InputPhoneNum ex)444-555-3123\n"];
+                            [newcontact addPhoneNumbers:(int)InputPhonelabel numbers:InputPhoneNum];
+                        }
+                        else{break;}
+                    }
+                    
                     [newcontact setEmail:InputEmail];
                     [newcontact setName:InputName];
                     

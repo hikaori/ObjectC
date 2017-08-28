@@ -6,7 +6,7 @@
 //  Copyright © 2017 kaori hirata. All rights reserved.
 //
 
-#import "divisionQuestion.h"
+#import "DivisionQuestion.h"
 
 @implementation divisionQuestion
 

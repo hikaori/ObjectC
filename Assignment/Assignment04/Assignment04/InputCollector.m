@@ -37,9 +37,20 @@
 }
 
 -(void)historycommand{
-    for(NSUInteger i = self.inputlist.count -1 ; i > self.inputlist.count -4; i--){
-        NSString *command = self.inputlist[i];
-        NSLog(@"%@",command);
+    if(self.inputlist.count >= 3){
+        NSLog(@"%@\n,%@\n,%@\n",
+        [self.inputlist objectAtIndex:self.inputlist.count-1],
+        [self.inputlist objectAtIndex:self.inputlist.count-2],
+              [self.inputlist objectAtIndex:self.inputlist.count-3]);
+    }
+    else if(self.inputlist.count == 2){
+        NSLog(@"%@\n,%@\n",
+              [self.inputlist objectAtIndex:1],
+              [self.inputlist objectAtIndex:0]);
+    }
+    else{
+        NSLog(@"%@\n",
+              [self.inputlist objectAtIndex:0]);
     }
 }
 

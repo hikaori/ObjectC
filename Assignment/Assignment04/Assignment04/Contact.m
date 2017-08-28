@@ -10,16 +10,32 @@
 
 @implementation Contact
 //- (instancetype)initWithname:(NSString*) name email :(NSString*) email
-- (instancetype)initWithname:(NSString*) name email :(NSString*) email phonelabel :(NSString*) phonelabel pnoneNum :(NSString*) pnoneNum
+- (instancetype)init
 {
     self = [super init];
     if (self) {
-        _name = name;
-        _email = email;
-        _phonelabel = phonelabel;
-        _pnoneNum = pnoneNum;
+        _phonelabel = [[NSMutableDictionary alloc]init];
             }
     return self;
 }
+
+-(void) addPhoneNumbers:(enum Phone) type numbers: (NSString *) number{
+    switch (type) {
+        case Mobile:
+            [_phonelabel setObject:number forKey:@"Mobile"];
+            break;
+        case Work:
+            [_phonelabel setObject:number forKey:@"Work"];
+            break;
+        case Home:
+            [_phonelabel setObject:number forKey:@"Home"];
+            break;
+            
+        default:
+            NSLog(@"Wrong type!");
+            break;
+    }
+}
+
 
 @end

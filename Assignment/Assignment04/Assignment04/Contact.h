@@ -11,9 +11,13 @@
 @interface Contact : NSObject
 @property NSString* name;
 @property NSString* email;
-@property NSString* phonelabel;
+@property NSMutableDictionary* phonelabel;
 @property NSString* pnoneNum;
 
-- (instancetype)initWithname:(NSString*) name email :(NSString*) email phonelabel :(NSString*) phonelabel pnoneNum :(NSString*) pnoneNum;
+enum Phone {Mobile, Work, Home};
 
+- (instancetype)init;
+
+
+-(void) addPhoneNumbers:(enum Phone) type numbers: (NSString *) number;
 @end

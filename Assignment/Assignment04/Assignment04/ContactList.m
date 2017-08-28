@@ -35,13 +35,16 @@
 
 -(void)printtargetcontact:(NSString *)strInput{
      NSInteger intInput = [strInput intValue];
-    NSLog(@"%lu",self.contactlistArray.count);
+//    NSLog(@"%lu",self.contactlistArray.count);
     if(intInput >= self.contactlistArray.count){
         NSLog(@"not found");
     }
     else{
         Contact *result = self.contactlistArray[intInput];
-        NSLog(@"id:%lu name:%@ email:%@",intInput,result.name,result.email);
+        NSLog(@"id:%lu name:%@ email:%@\n",intInput,result.name,result.email);
+        for(id key in [result.phonelabel keyEnumerator]) {
+            NSLog(@"key:%@ Value:%@",key ,[result.phonelabel objectForKey:key]);
+        }
     }
 }
 
@@ -58,13 +61,14 @@
     for(int i = 0; i < self.contactlistArray.count; i++){
         Contact *b = self.contactlistArray[i];
         if([b.email isEqualToString:strInput]){
-            NSLog(@"The Email already exists");
+            NSLog(@"The Email already exists. try again");
             return true;
             break;
         }
     }
     return false;
 }
+
 
 
 @end
