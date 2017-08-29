@@ -7,14 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DC12F0591F52766C00D1B8E7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DC12F0581F52766C00D1B8E7 /* main.m */; };
-		DC12F0611F52768000D1B8E7 /* Doctor.m in Sources */ = {isa = PBXBuildFile; fileRef = DC12F0601F52768000D1B8E7 /* Doctor.m */; };
-		DC12F0641F52768D00D1B8E7 /* Patient.m in Sources */ = {isa = PBXBuildFile; fileRef = DC12F0631F52768D00D1B8E7 /* Patient.m */; };
-		DC12F06A1F54F40A00D1B8E7 /* Prescription.m in Sources */ = {isa = PBXBuildFile; fileRef = DC12F0691F54F40A00D1B8E7 /* Prescription.m */; };
+		DC12F0781F550CD700D1B8E7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DC12F0771F550CD700D1B8E7 /* main.m */; };
+		DC12F0861F55126400D1B8E7 /* GameController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC12F0851F55126400D1B8E7 /* GameController.m */; };
+		DC12F0891F55190400D1B8E7 /* Dice.m in Sources */ = {isa = PBXBuildFile; fileRef = DC12F0881F55190400D1B8E7 /* Dice.m */; };
+		DC89414D1F5533A200113D2E /* InputCollector.m in Sources */ = {isa = PBXBuildFile; fileRef = DC89414C1F5533A200113D2E /* InputCollector.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		DC12F0531F52766C00D1B8E7 /* CopyFiles */ = {
+		DC12F0721F550CD700D1B8E7 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -26,18 +26,18 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		DC12F0551F52766C00D1B8E7 /* Assignment07 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Assignment07; sourceTree = BUILT_PRODUCTS_DIR; };
-		DC12F0581F52766C00D1B8E7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		DC12F05F1F52768000D1B8E7 /* Doctor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Doctor.h; sourceTree = "<group>"; };
-		DC12F0601F52768000D1B8E7 /* Doctor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Doctor.m; sourceTree = "<group>"; };
-		DC12F0621F52768D00D1B8E7 /* Patient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Patient.h; sourceTree = "<group>"; };
-		DC12F0631F52768D00D1B8E7 /* Patient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Patient.m; sourceTree = "<group>"; };
-		DC12F0681F54F40A00D1B8E7 /* Prescription.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Prescription.h; sourceTree = "<group>"; };
-		DC12F0691F54F40A00D1B8E7 /* Prescription.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Prescription.m; sourceTree = "<group>"; };
+		DC12F0741F550CD700D1B8E7 /* Threelow */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Threelow; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC12F0771F550CD700D1B8E7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DC12F0841F55126400D1B8E7 /* GameController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameController.h; sourceTree = "<group>"; };
+		DC12F0851F55126400D1B8E7 /* GameController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameController.m; sourceTree = "<group>"; };
+		DC12F0871F55190400D1B8E7 /* Dice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dice.h; sourceTree = "<group>"; };
+		DC12F0881F55190400D1B8E7 /* Dice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dice.m; sourceTree = "<group>"; };
+		DC89414B1F5533A200113D2E /* InputCollector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputCollector.h; sourceTree = "<group>"; };
+		DC89414C1F5533A200113D2E /* InputCollector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InputCollector.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		DC12F0521F52766C00D1B8E7 /* Frameworks */ = {
+		DC12F0711F550CD700D1B8E7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -47,105 +47,105 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		DC12F04C1F52766B00D1B8E7 = {
+		DC12F06B1F550CD700D1B8E7 = {
 			isa = PBXGroup;
 			children = (
-				DC12F0571F52766C00D1B8E7 /* Assignment07 */,
-				DC12F0561F52766C00D1B8E7 /* Products */,
+				DC12F0761F550CD700D1B8E7 /* Threelow */,
+				DC12F0751F550CD700D1B8E7 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		DC12F0561F52766C00D1B8E7 /* Products */ = {
+		DC12F0751F550CD700D1B8E7 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DC12F0551F52766C00D1B8E7 /* Assignment07 */,
+				DC12F0741F550CD700D1B8E7 /* Threelow */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		DC12F0571F52766C00D1B8E7 /* Assignment07 */ = {
+		DC12F0761F550CD700D1B8E7 /* Threelow */ = {
 			isa = PBXGroup;
 			children = (
-				DC12F0581F52766C00D1B8E7 /* main.m */,
-				DC12F05F1F52768000D1B8E7 /* Doctor.h */,
-				DC12F0601F52768000D1B8E7 /* Doctor.m */,
-				DC12F0621F52768D00D1B8E7 /* Patient.h */,
-				DC12F0631F52768D00D1B8E7 /* Patient.m */,
-				DC12F0681F54F40A00D1B8E7 /* Prescription.h */,
-				DC12F0691F54F40A00D1B8E7 /* Prescription.m */,
+				DC12F0771F550CD700D1B8E7 /* main.m */,
+				DC12F0871F55190400D1B8E7 /* Dice.h */,
+				DC12F0881F55190400D1B8E7 /* Dice.m */,
+				DC12F0841F55126400D1B8E7 /* GameController.h */,
+				DC12F0851F55126400D1B8E7 /* GameController.m */,
+				DC89414B1F5533A200113D2E /* InputCollector.h */,
+				DC89414C1F5533A200113D2E /* InputCollector.m */,
 			);
-			path = Assignment07;
+			path = Threelow;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		DC12F0541F52766C00D1B8E7 /* Assignment07 */ = {
+		DC12F0731F550CD700D1B8E7 /* Threelow */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DC12F05C1F52766C00D1B8E7 /* Build configuration list for PBXNativeTarget "Assignment07" */;
+			buildConfigurationList = DC12F07B1F550CD700D1B8E7 /* Build configuration list for PBXNativeTarget "Threelow" */;
 			buildPhases = (
-				DC12F0511F52766C00D1B8E7 /* Sources */,
-				DC12F0521F52766C00D1B8E7 /* Frameworks */,
-				DC12F0531F52766C00D1B8E7 /* CopyFiles */,
+				DC12F0701F550CD700D1B8E7 /* Sources */,
+				DC12F0711F550CD700D1B8E7 /* Frameworks */,
+				DC12F0721F550CD700D1B8E7 /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = Assignment07;
-			productName = Assignment07;
-			productReference = DC12F0551F52766C00D1B8E7 /* Assignment07 */;
+			name = Threelow;
+			productName = Threelow;
+			productReference = DC12F0741F550CD700D1B8E7 /* Threelow */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		DC12F04D1F52766B00D1B8E7 /* Project object */ = {
+		DC12F06C1F550CD700D1B8E7 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = "kaori hirata";
 				TargetAttributes = {
-					DC12F0541F52766C00D1B8E7 = {
+					DC12F0731F550CD700D1B8E7 = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = 5GEUY7T2XK;
 						ProvisioningStyle = Automatic;
 					};
 				};
 			};
-			buildConfigurationList = DC12F0501F52766B00D1B8E7 /* Build configuration list for PBXProject "Assignment07" */;
+			buildConfigurationList = DC12F06F1F550CD700D1B8E7 /* Build configuration list for PBXProject "Threelow" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = DC12F04C1F52766B00D1B8E7;
-			productRefGroup = DC12F0561F52766C00D1B8E7 /* Products */;
+			mainGroup = DC12F06B1F550CD700D1B8E7;
+			productRefGroup = DC12F0751F550CD700D1B8E7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				DC12F0541F52766C00D1B8E7 /* Assignment07 */,
+				DC12F0731F550CD700D1B8E7 /* Threelow */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		DC12F0511F52766C00D1B8E7 /* Sources */ = {
+		DC12F0701F550CD700D1B8E7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DC12F0641F52768D00D1B8E7 /* Patient.m in Sources */,
-				DC12F0611F52768000D1B8E7 /* Doctor.m in Sources */,
-				DC12F0591F52766C00D1B8E7 /* main.m in Sources */,
-				DC12F06A1F54F40A00D1B8E7 /* Prescription.m in Sources */,
+				DC12F0891F55190400D1B8E7 /* Dice.m in Sources */,
+				DC12F0861F55126400D1B8E7 /* GameController.m in Sources */,
+				DC89414D1F5533A200113D2E /* InputCollector.m in Sources */,
+				DC12F0781F550CD700D1B8E7 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		DC12F05A1F52766C00D1B8E7 /* Debug */ = {
+		DC12F0791F550CD700D1B8E7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -193,7 +193,7 @@
 			};
 			name = Debug;
 		};
-		DC12F05B1F52766C00D1B8E7 /* Release */ = {
+		DC12F07A1F550CD700D1B8E7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -234,7 +234,7 @@
 			};
 			name = Release;
 		};
-		DC12F05D1F52766C00D1B8E7 /* Debug */ = {
+		DC12F07C1F550CD700D1B8E7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DEVELOPMENT_TEAM = 5GEUY7T2XK;
@@ -242,7 +242,7 @@
 			};
 			name = Debug;
 		};
-		DC12F05E1F52766C00D1B8E7 /* Release */ = {
+		DC12F07D1F550CD700D1B8E7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DEVELOPMENT_TEAM = 5GEUY7T2XK;
@@ -253,25 +253,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		DC12F0501F52766B00D1B8E7 /* Build configuration list for PBXProject "Assignment07" */ = {
+		DC12F06F1F550CD700D1B8E7 /* Build configuration list for PBXProject "Threelow" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DC12F05A1F52766C00D1B8E7 /* Debug */,
-				DC12F05B1F52766C00D1B8E7 /* Release */,
+				DC12F0791F550CD700D1B8E7 /* Debug */,
+				DC12F07A1F550CD700D1B8E7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DC12F05C1F52766C00D1B8E7 /* Build configuration list for PBXNativeTarget "Assignment07" */ = {
+		DC12F07B1F550CD700D1B8E7 /* Build configuration list for PBXNativeTarget "Threelow" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DC12F05D1F52766C00D1B8E7 /* Debug */,
-				DC12F05E1F52766C00D1B8E7 /* Release */,
+				DC12F07C1F550CD700D1B8E7 /* Debug */,
+				DC12F07D1F550CD700D1B8E7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = DC12F04D1F52766B00D1B8E7 /* Project object */;
+	rootObject = DC12F06C1F550CD700D1B8E7 /* Project object */;
 }

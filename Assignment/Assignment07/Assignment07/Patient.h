@@ -7,7 +7,22 @@
 //
 
 #import <Foundation/Foundation.h>
+@ class Doctor;
+
 
 @interface Patient : NSObject
+@property NSString *name;
+@property int id;
+@property int age;
+@property Boolean healthcard;
+@property NSString* symptom;
+
+
+- (instancetype)initWithname:(NSString*) name age:(int) age healthcard:(Boolean) healthcard symptom:(NSString *) symptom;
+-(Boolean) visitDoctor:(Doctor *) dr;
+-(void)requestMedication:(Doctor *) dr;
+
+
+
 
 @end

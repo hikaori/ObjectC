@@ -7,7 +7,30 @@
 //
 
 #import "Doctor.h"
+#import "Patient.h"
+#import "Prescription.h"
 
 @implementation Doctor
+
+- (instancetype)initWithname :(NSString*) name
+{
+    self = [super init];
+    if (self) {
+        _patientlist = [[NSMutableArray alloc]init];
+    }
+    return self;
+}
+
+-(Boolean)hasHealthcard:(Patient*)patient{
+    if(patient.healthcard){
+        return true;
+    }
+    else{return false;}
+}
+
+-(Boolean) prescribeMedication: (Patient *) patient{
+    Prescription *prescription = [[Prescription alloc]init];
+    prescription 
+}
 
 @end
