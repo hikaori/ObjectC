@@ -2,27 +2,33 @@
 //  Patient.h
 //  Assignment07
 //
-//  Created by kaori hirata on 2017-08-26.
+//  Created by kaori hirata on 2017-08-29.
 //  Copyright © 2017 kaori hirata. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
-@ class Doctor;
-
+@class Doctor;
+@class Prescription;
 
 @interface Patient : NSObject
-@property NSString *name;
-@property int id;
+
+{
+@private NSMutableDictionary *prescriptionList;
+}
+
+@property NSString* name;
 @property int age;
-@property Boolean healthcard;
-@property NSString* symptom;
-
-
-- (instancetype)initWithname:(NSString*) name age:(int) age healthcard:(Boolean) healthcard symptom:(NSString *) symptom;
--(Boolean) visitDoctor:(Doctor *) dr;
--(void)requestMedication:(Doctor *) dr;
+@property int id;
+@property BOOL* healthcard;
+@property NSInteger symptom;
 
 
 
+- (instancetype)initWithname:(NSString*) name age:(int)age healthcard:(BOOL*) healthcard symptom:(NSInteger) symptom;
+
+-(Boolean) visitDr:(Doctor *)dr;
+-(void)requestMedication:(Doctor *)dr;
+-(void) addpriscriptionList:(Prescription *)medicine;
+-(void)showPriscriptionList;
 
 @end

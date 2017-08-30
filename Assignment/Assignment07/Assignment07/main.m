@@ -2,35 +2,51 @@
 //  main.m
 //  Assignment07
 //
-//  Created by kaori hirata on 2017-08-26.
+//  Created by kaori hirata on 2017-08-29.
 //  Copyright © 2017 kaori hirata. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 #import "Doctor.h"
 #import "Patient.h"
+#import "Prescription.h"
+
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        // insert code here...
-        Doctor *dr1 = [[Doctor alloc]initWithname:@"Dr.philips"];
-        Patient *p1 = [[Patient alloc] initWithname:@"kaori" age:20 healthcard:YES symptom:@"flu"];
+        
+        Doctor *dr1 = [[Doctor alloc]initWithname:@"Philips"];
+        Doctor *dr2 = [[Doctor alloc]initWithname:@"MIKE"];
+        SymptomDf mySymptom = Cold;
+        Patient *p1 = [[Patient alloc]initWithname:@"kaori" age:10 healthcard:YES symptom:mySymptom];
         
         
-        if(![p1 visitDoctor:dr1]){
-            NSLog(@"Sorry we cant accept you. Please bring healthcard");
+        Doctor *DrInCharge = dr1;
+        Patient *targetPatient = p1;
+        
+
+        if([targetPatient visitDr:DrInCharge]){
+            NSLog(@"Dr accepted the Patient");
+            [DrInCharge addPatientslist:targetPatient];
+            [targetPatient requestMedication:DrInCharge];
         }
         else{
-            NSLog(@"the Dr accept the Patient");
-            // THE PATIENT IS LISTED IN Dr's PATIENT LIST
-            [dr1.patientlist addObject:p1];
-            
-            [p1 requestMedication:dr1];
-            
+            NSLog(@"Sorry Dr can't accept you. Please bring healthcard");
         }
         
+        /////  day later  ////
+        NSLog(@"the patient visit the other doctor");
         
+        if([targetPatient visitDr:dr2]){
+            [dr2 addPatientslist:targetPatient];
+            [targetPatient showPriscriptionList];
+        }
         
+        NSLog(@"/////// Dictionary test //////////");
+        NSMutableDictionary *dict = [[NSMutableDictionary alloc]initWithCapacity:10];
+        [dict setObject:@"aaaa" forKey:@"kaori"];
+        NSLog(@"%@", [dict valueForKey:@"kaori"]);
+
     }
     return 0;
 }

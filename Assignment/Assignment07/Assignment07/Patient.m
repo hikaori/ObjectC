@@ -2,38 +2,50 @@
 //  Patient.m
 //  Assignment07
 //
-//  Created by kaori hirata on 2017-08-26.
+//  Created by kaori hirata on 2017-08-29.
 //  Copyright © 2017 kaori hirata. All rights reserved.
 //
 
 #import "Patient.h"
 #import "Doctor.h"
-@interface Patient() {
-@private
-    NSMutableArray *prescriptions;
-}
-@end
-
+#import "Patient.h"
 
 @implementation Patient
 
-- (instancetype)initWithname:(NSString*) name age:(int) age healthcard:(Boolean) healthcard symptom:(NSString *) symptom{
+- (instancetype)initWithname:(NSString*) name age:(int)age healthcard:(BOOL*) healthcard symptom:(NSInteger) symptom
+{
     self = [super init];
     if (self) {
-        _name = self.name;
-        _age = self.age;
+        _name = name;
+        _age  = age;
         _healthcard = healthcard;
         _symptom = symptom;
+        prescriptionList = [NSMutableDictionary new];
     }
     return self;
 }
 
--(Boolean) visitDoctor:(Doctor *) dr{
-    return  [dr hasHealthcard:self];
+-(Boolean) visitDr:(Doctor*)dr{
+    if([dr hasHealthcard:self]){
+        return true;
+    }
+    else{
+        return false;
+    }
 }
 
--(void)requestMedication:(Doctor *) dr{
-    [dr prescribeMedication:self];
+-(void)requestMedication:(Doctor *)dr{
+    [dr MedicatePrescription:self];
+}
+
+-(void) addpriscriptionList:(Prescription *)medicine{
+    [prescriptionList setValue:medicine forKey:self.name];
+}
+
+-(void)showPriscriptionList{
+//    NSString *key = self.name;
+    for(NSString *key in [prescriptionList allKeys])
+        NSLog(@"%@", [prescriptionList objectForKey:key]);
 }
 
 @end
