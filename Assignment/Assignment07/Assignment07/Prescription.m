@@ -42,5 +42,9 @@
     }
 }
 
+- (NSString *) description {
+    // you have to return a NSString type.
+    return [NSString stringWithFormat:@"%@", self.medicine];
+}
 
 @end

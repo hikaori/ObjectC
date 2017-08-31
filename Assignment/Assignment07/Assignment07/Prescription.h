@@ -20,4 +20,5 @@ typedef enum Symptom {Cold, Flu, Headache} SymptomDf;
 
 
 -(NSString *) prescription :(enum Symptom)type;
+- (NSString *) description; // what is this methond doing? (in Java, toString method)
 @end

@@ -39,13 +39,17 @@
 }
 
 -(void) addpriscriptionList:(Prescription *)medicine{
+    // prescriptionList key: NSString , value: Prescription
     [prescriptionList setValue:medicine forKey:self.name];
 }
 
 -(void)showPriscriptionList{
 //    NSString *key = self.name;
     for(NSString *key in [prescriptionList allKeys])
-        NSLog(@"%@", [prescriptionList objectForKey:key]);
+        // what is the data type of [prescriptionList objectForKey:key]? 
+        NSLog(@"the Patient Prescription : %@", [prescriptionList objectForKey:key]);
 }
+
+
 
 @end

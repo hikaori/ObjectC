@@ -42,11 +42,6 @@ int main(int argc, const char * argv[]) {
             [targetPatient showPriscriptionList];
         }
         
-        NSLog(@"/////// Dictionary test //////////");
-        NSMutableDictionary *dict = [[NSMutableDictionary alloc]initWithCapacity:10];
-        [dict setObject:@"aaaa" forKey:@"kaori"];
-        NSLog(@"%@", [dict valueForKey:@"kaori"]);
-
     }
     return 0;
 }

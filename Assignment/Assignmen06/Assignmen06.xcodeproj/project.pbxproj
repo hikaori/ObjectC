@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DC89417D1F57259A00113D2E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DC89417C1F57259A00113D2E /* main.m */; };
+		DC89419F1F5783B200113D2E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DC89419E1F5783B200113D2E /* main.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		DC8941771F57259A00113D2E /* CopyFiles */ = {
+		DC8941991F5783B200113D2E /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -23,12 +23,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		DC8941791F57259A00113D2E /* McDonald's */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "McDonald's"; sourceTree = BUILT_PRODUCTS_DIR; };
-		DC89417C1F57259A00113D2E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DC89419B1F5783B200113D2E /* Assignmen06 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Assignmen06; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC89419E1F5783B200113D2E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		DC8941761F57259A00113D2E /* Frameworks */ = {
+		DC8941981F5783B200113D2E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -38,96 +38,96 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		DC8941701F57259A00113D2E = {
+		DC8941921F5783B200113D2E = {
 			isa = PBXGroup;
 			children = (
-				DC89417B1F57259A00113D2E /* McDonald's */,
-				DC89417A1F57259A00113D2E /* Products */,
+				DC89419D1F5783B200113D2E /* Assignmen06 */,
+				DC89419C1F5783B200113D2E /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		DC89417A1F57259A00113D2E /* Products */ = {
+		DC89419C1F5783B200113D2E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DC8941791F57259A00113D2E /* McDonald's */,
+				DC89419B1F5783B200113D2E /* Assignmen06 */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		DC89417B1F57259A00113D2E /* McDonald's */ = {
+		DC89419D1F5783B200113D2E /* Assignmen06 */ = {
 			isa = PBXGroup;
 			children = (
-				DC89417C1F57259A00113D2E /* main.m */,
+				DC89419E1F5783B200113D2E /* main.m */,
 			);
-			path = "McDonald's";
+			path = Assignmen06;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		DC8941781F57259A00113D2E /* McDonald's */ = {
+		DC89419A1F5783B200113D2E /* Assignmen06 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DC8941801F57259A00113D2E /* Build configuration list for PBXNativeTarget "McDonald's" */;
+			buildConfigurationList = DC8941A21F5783B200113D2E /* Build configuration list for PBXNativeTarget "Assignmen06" */;
 			buildPhases = (
-				DC8941751F57259A00113D2E /* Sources */,
-				DC8941761F57259A00113D2E /* Frameworks */,
-				DC8941771F57259A00113D2E /* CopyFiles */,
+				DC8941971F5783B200113D2E /* Sources */,
+				DC8941981F5783B200113D2E /* Frameworks */,
+				DC8941991F5783B200113D2E /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "McDonald's";
-			productName = "McDonald's";
-			productReference = DC8941791F57259A00113D2E /* McDonald's */;
+			name = Assignmen06;
+			productName = Assignmen06;
+			productReference = DC89419B1F5783B200113D2E /* Assignmen06 */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		DC8941711F57259A00113D2E /* Project object */ = {
+		DC8941931F5783B200113D2E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = "kaori hirata";
 				TargetAttributes = {
-					DC8941781F57259A00113D2E = {
+					DC89419A1F5783B200113D2E = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = 5GEUY7T2XK;
 						ProvisioningStyle = Automatic;
 					};
 				};
 			};
-			buildConfigurationList = DC8941741F57259A00113D2E /* Build configuration list for PBXProject "McDonald's" */;
+			buildConfigurationList = DC8941961F5783B200113D2E /* Build configuration list for PBXProject "Assignmen06" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = DC8941701F57259A00113D2E;
-			productRefGroup = DC89417A1F57259A00113D2E /* Products */;
+			mainGroup = DC8941921F5783B200113D2E;
+			productRefGroup = DC89419C1F5783B200113D2E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				DC8941781F57259A00113D2E /* McDonald's */,
+				DC89419A1F5783B200113D2E /* Assignmen06 */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		DC8941751F57259A00113D2E /* Sources */ = {
+		DC8941971F5783B200113D2E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DC89417D1F57259A00113D2E /* main.m in Sources */,
+				DC89419F1F5783B200113D2E /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		DC89417E1F57259A00113D2E /* Debug */ = {
+		DC8941A01F5783B200113D2E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -175,7 +175,7 @@
 			};
 			name = Debug;
 		};
-		DC89417F1F57259A00113D2E /* Release */ = {
+		DC8941A11F5783B200113D2E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -216,7 +216,7 @@
 			};
 			name = Release;
 		};
-		DC8941811F57259A00113D2E /* Debug */ = {
+		DC8941A31F5783B200113D2E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DEVELOPMENT_TEAM = 5GEUY7T2XK;
@@ -224,7 +224,7 @@
 			};
 			name = Debug;
 		};
-		DC8941821F57259A00113D2E /* Release */ = {
+		DC8941A41F5783B200113D2E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DEVELOPMENT_TEAM = 5GEUY7T2XK;
@@ -235,24 +235,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		DC8941741F57259A00113D2E /* Build configuration list for PBXProject "McDonald's" */ = {
+		DC8941961F5783B200113D2E /* Build configuration list for PBXProject "Assignmen06" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DC89417E1F57259A00113D2E /* Debug */,
-				DC89417F1F57259A00113D2E /* Release */,
+				DC8941A01F5783B200113D2E /* Debug */,
+				DC8941A11F5783B200113D2E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DC8941801F57259A00113D2E /* Build configuration list for PBXNativeTarget "McDonald's" */ = {
+		DC8941A21F5783B200113D2E /* Build configuration list for PBXNativeTarget "Assignmen06" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DC8941811F57259A00113D2E /* Debug */,
-				DC8941821F57259A00113D2E /* Release */,
+				DC8941A31F5783B200113D2E /* Debug */,
+				DC8941A41F5783B200113D2E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = DC8941711F57259A00113D2E /* Project object */;
+	rootObject = DC8941931F5783B200113D2E /* Project object */;
 }
