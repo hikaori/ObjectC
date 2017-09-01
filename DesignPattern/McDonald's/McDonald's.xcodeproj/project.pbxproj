@@ -1,0 +1,323 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DC89417D1F57259A00113D2E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DC89417C1F57259A00113D2E /* main.m */; };
+		DC8941851F5725D000113D2E /* VegBurger.m in Sources */ = {isa = PBXBuildFile; fileRef = DC8941841F5725D000113D2E /* VegBurger.m */; };
+		DC8941881F5725FD00113D2E /* ChickenBurger.m in Sources */ = {isa = PBXBuildFile; fileRef = DC8941871F5725FD00113D2E /* ChickenBurger.m */; };
+		DC89418B1F57262F00113D2E /* Burger.m in Sources */ = {isa = PBXBuildFile; fileRef = DC89418A1F57262F00113D2E /* Burger.m */; };
+		DC9319E01F580C7D008AD504 /* Wrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = DC9319DF1F580C7D008AD504 /* Wrapper.m */; };
+		DC9319E31F592E82008AD504 /* Bottle.m in Sources */ = {isa = PBXBuildFile; fileRef = DC9319E21F592E82008AD504 /* Bottle.m */; };
+		DC9319E61F592F82008AD504 /* ColdDrink.m in Sources */ = {isa = PBXBuildFile; fileRef = DC9319E51F592F82008AD504 /* ColdDrink.m */; };
+		DC9319E91F592F94008AD504 /* Pepsi.m in Sources */ = {isa = PBXBuildFile; fileRef = DC9319E81F592F94008AD504 /* Pepsi.m */; };
+		DC9319EC1F592FA3008AD504 /* Coke.m in Sources */ = {isa = PBXBuildFile; fileRef = DC9319EB1F592FA3008AD504 /* Coke.m */; };
+		DC9319EF1F59352A008AD504 /* Meal.m in Sources */ = {isa = PBXBuildFile; fileRef = DC9319EE1F59352A008AD504 /* Meal.m */; };
+		DC9319F21F593C2B008AD504 /* MealBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = DC9319F11F593C2B008AD504 /* MealBuilder.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DC8941771F57259A00113D2E /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		DC8941791F57259A00113D2E /* McDonald's */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "McDonald's"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC89417C1F57259A00113D2E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DC8941831F5725D000113D2E /* VegBurger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VegBurger.h; sourceTree = "<group>"; };
+		DC8941841F5725D000113D2E /* VegBurger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VegBurger.m; sourceTree = "<group>"; };
+		DC8941861F5725FD00113D2E /* ChickenBurger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChickenBurger.h; sourceTree = "<group>"; };
+		DC8941871F5725FD00113D2E /* ChickenBurger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChickenBurger.m; sourceTree = "<group>"; };
+		DC8941891F57262F00113D2E /* Burger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Burger.h; sourceTree = "<group>"; };
+		DC89418A1F57262F00113D2E /* Burger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Burger.m; sourceTree = "<group>"; };
+		DC89418C1F5726D600113D2E /* Item.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Item.h; sourceTree = "<group>"; };
+		DC89418F1F57279A00113D2E /* Packing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Packing.h; sourceTree = "<group>"; };
+		DC9319DE1F580C7D008AD504 /* Wrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Wrapper.h; sourceTree = "<group>"; };
+		DC9319DF1F580C7D008AD504 /* Wrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Wrapper.m; sourceTree = "<group>"; };
+		DC9319E11F592E82008AD504 /* Bottle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bottle.h; sourceTree = "<group>"; };
+		DC9319E21F592E82008AD504 /* Bottle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bottle.m; sourceTree = "<group>"; };
+		DC9319E41F592F82008AD504 /* ColdDrink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColdDrink.h; sourceTree = "<group>"; };
+		DC9319E51F592F82008AD504 /* ColdDrink.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColdDrink.m; sourceTree = "<group>"; };
+		DC9319E71F592F94008AD504 /* Pepsi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pepsi.h; sourceTree = "<group>"; };
+		DC9319E81F592F94008AD504 /* Pepsi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Pepsi.m; sourceTree = "<group>"; };
+		DC9319EA1F592FA3008AD504 /* Coke.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Coke.h; sourceTree = "<group>"; };
+		DC9319EB1F592FA3008AD504 /* Coke.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Coke.m; sourceTree = "<group>"; };
+		DC9319ED1F59352A008AD504 /* Meal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Meal.h; sourceTree = "<group>"; };
+		DC9319EE1F59352A008AD504 /* Meal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Meal.m; sourceTree = "<group>"; };
+		DC9319F01F593C2B008AD504 /* MealBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MealBuilder.h; sourceTree = "<group>"; };
+		DC9319F11F593C2B008AD504 /* MealBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MealBuilder.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DC8941761F57259A00113D2E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DC8941701F57259A00113D2E = {
+			isa = PBXGroup;
+			children = (
+				DC89417B1F57259A00113D2E /* McDonald's */,
+				DC89417A1F57259A00113D2E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DC89417A1F57259A00113D2E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DC8941791F57259A00113D2E /* McDonald's */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DC89417B1F57259A00113D2E /* McDonald's */ = {
+			isa = PBXGroup;
+			children = (
+				DC89417C1F57259A00113D2E /* main.m */,
+				DC9319ED1F59352A008AD504 /* Meal.h */,
+				DC9319EE1F59352A008AD504 /* Meal.m */,
+				DC89418C1F5726D600113D2E /* Item.h */,
+				DC8941891F57262F00113D2E /* Burger.h */,
+				DC89418A1F57262F00113D2E /* Burger.m */,
+				DC8941831F5725D000113D2E /* VegBurger.h */,
+				DC8941841F5725D000113D2E /* VegBurger.m */,
+				DC8941861F5725FD00113D2E /* ChickenBurger.h */,
+				DC8941871F5725FD00113D2E /* ChickenBurger.m */,
+				DC89418F1F57279A00113D2E /* Packing.h */,
+				DC9319DE1F580C7D008AD504 /* Wrapper.h */,
+				DC9319E11F592E82008AD504 /* Bottle.h */,
+				DC9319E21F592E82008AD504 /* Bottle.m */,
+				DC9319DF1F580C7D008AD504 /* Wrapper.m */,
+				DC9319E41F592F82008AD504 /* ColdDrink.h */,
+				DC9319E51F592F82008AD504 /* ColdDrink.m */,
+				DC9319E71F592F94008AD504 /* Pepsi.h */,
+				DC9319E81F592F94008AD504 /* Pepsi.m */,
+				DC9319EA1F592FA3008AD504 /* Coke.h */,
+				DC9319EB1F592FA3008AD504 /* Coke.m */,
+				DC9319F01F593C2B008AD504 /* MealBuilder.h */,
+				DC9319F11F593C2B008AD504 /* MealBuilder.m */,
+			);
+			path = "McDonald's";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DC8941781F57259A00113D2E /* McDonald's */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC8941801F57259A00113D2E /* Build configuration list for PBXNativeTarget "McDonald's" */;
+			buildPhases = (
+				DC8941751F57259A00113D2E /* Sources */,
+				DC8941761F57259A00113D2E /* Frameworks */,
+				DC8941771F57259A00113D2E /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "McDonald's";
+			productName = "McDonald's";
+			productReference = DC8941791F57259A00113D2E /* McDonald's */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DC8941711F57259A00113D2E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "kaori hirata";
+				TargetAttributes = {
+					DC8941781F57259A00113D2E = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 5GEUY7T2XK;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = DC8941741F57259A00113D2E /* Build configuration list for PBXProject "McDonald's" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = DC8941701F57259A00113D2E;
+			productRefGroup = DC89417A1F57259A00113D2E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DC8941781F57259A00113D2E /* McDonald's */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DC8941751F57259A00113D2E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC9319EF1F59352A008AD504 /* Meal.m in Sources */,
+				DC9319F21F593C2B008AD504 /* MealBuilder.m in Sources */,
+				DC89417D1F57259A00113D2E /* main.m in Sources */,
+				DC9319EC1F592FA3008AD504 /* Coke.m in Sources */,
+				DC9319E61F592F82008AD504 /* ColdDrink.m in Sources */,
+				DC8941851F5725D000113D2E /* VegBurger.m in Sources */,
+				DC9319E91F592F94008AD504 /* Pepsi.m in Sources */,
+				DC89418B1F57262F00113D2E /* Burger.m in Sources */,
+				DC8941881F5725FD00113D2E /* ChickenBurger.m in Sources */,
+				DC9319E01F580C7D008AD504 /* Wrapper.m in Sources */,
+				DC9319E31F592E82008AD504 /* Bottle.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		DC89417E1F57259A00113D2E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		DC89417F1F57259A00113D2E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		DC8941811F57259A00113D2E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 5GEUY7T2XK;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		DC8941821F57259A00113D2E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 5GEUY7T2XK;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DC8941741F57259A00113D2E /* Build configuration list for PBXProject "McDonald's" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC89417E1F57259A00113D2E /* Debug */,
+				DC89417F1F57259A00113D2E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DC8941801F57259A00113D2E /* Build configuration list for PBXNativeTarget "McDonald's" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC8941811F57259A00113D2E /* Debug */,
+				DC8941821F57259A00113D2E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DC8941711F57259A00113D2E /* Project object */;
+}
