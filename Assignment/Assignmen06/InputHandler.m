@@ -10,4 +10,11 @@
 
 @implementation InputHandler
 
++ (NSString *) getUserInput {
+    char myStr[256];
+    fgets(myStr, 256, stdin);
+    
+    return [[NSString stringWithCString:myStr encoding:NSUTF8StringEncoding] stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+}
+
 @end

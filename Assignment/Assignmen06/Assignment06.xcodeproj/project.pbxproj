@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		DC89419F1F5783B200113D2E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DC89419E1F5783B200113D2E /* main.m */; };
+		DC8941A71F5783C100113D2E /* Dice.m in Sources */ = {isa = PBXBuildFile; fileRef = DC8941A61F5783C100113D2E /* Dice.m */; };
+		DC9319DA1F57DE9F008AD504 /* InputHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = DC9319D91F57DE9F008AD504 /* InputHandler.m */; };
+		DC9319DD1F57E6D7008AD504 /* GameController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC9319DC1F57E6D7008AD504 /* GameController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,8 +26,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		DC89419B1F5783B200113D2E /* Assignmen06 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Assignmen06; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC89419B1F5783B200113D2E /* Assignment06 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Assignment06; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC89419E1F5783B200113D2E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DC8941A51F5783C100113D2E /* Dice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dice.h; sourceTree = "<group>"; };
+		DC8941A61F5783C100113D2E /* Dice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dice.m; sourceTree = "<group>"; };
+		DC9319D81F57DE9F008AD504 /* InputHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = InputHandler.h; path = ../InputHandler.h; sourceTree = "<group>"; };
+		DC9319D91F57DE9F008AD504 /* InputHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = InputHandler.m; path = ../InputHandler.m; sourceTree = "<group>"; };
+		DC9319DB1F57E6D7008AD504 /* GameController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameController.h; sourceTree = "<group>"; };
+		DC9319DC1F57E6D7008AD504 /* GameController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,7 +50,7 @@
 		DC8941921F5783B200113D2E = {
 			isa = PBXGroup;
 			children = (
-				DC89419D1F5783B200113D2E /* Assignmen06 */,
+				DC89419D1F5783B200113D2E /* Assignment06 */,
 				DC89419C1F5783B200113D2E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,25 +58,32 @@
 		DC89419C1F5783B200113D2E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DC89419B1F5783B200113D2E /* Assignmen06 */,
+				DC89419B1F5783B200113D2E /* Assignment06 */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		DC89419D1F5783B200113D2E /* Assignmen06 */ = {
+		DC89419D1F5783B200113D2E /* Assignment06 */ = {
 			isa = PBXGroup;
 			children = (
 				DC89419E1F5783B200113D2E /* main.m */,
+				DC9319D81F57DE9F008AD504 /* InputHandler.h */,
+				DC9319D91F57DE9F008AD504 /* InputHandler.m */,
+				DC8941A51F5783C100113D2E /* Dice.h */,
+				DC8941A61F5783C100113D2E /* Dice.m */,
+				DC9319DB1F57E6D7008AD504 /* GameController.h */,
+				DC9319DC1F57E6D7008AD504 /* GameController.m */,
 			);
+			name = Assignment06;
 			path = Assignmen06;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		DC89419A1F5783B200113D2E /* Assignmen06 */ = {
+		DC89419A1F5783B200113D2E /* Assignment06 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DC8941A21F5783B200113D2E /* Build configuration list for PBXNativeTarget "Assignmen06" */;
+			buildConfigurationList = DC8941A21F5783B200113D2E /* Build configuration list for PBXNativeTarget "Assignment06" */;
 			buildPhases = (
 				DC8941971F5783B200113D2E /* Sources */,
 				DC8941981F5783B200113D2E /* Frameworks */,
@@ -77,9 +93,9 @@
 			);
 			dependencies = (
 			);
-			name = Assignmen06;
+			name = Assignment06;
 			productName = Assignmen06;
-			productReference = DC89419B1F5783B200113D2E /* Assignmen06 */;
+			productReference = DC89419B1F5783B200113D2E /* Assignment06 */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -98,7 +114,7 @@
 					};
 				};
 			};
-			buildConfigurationList = DC8941961F5783B200113D2E /* Build configuration list for PBXProject "Assignmen06" */;
+			buildConfigurationList = DC8941961F5783B200113D2E /* Build configuration list for PBXProject "Assignment06" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -110,7 +126,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				DC89419A1F5783B200113D2E /* Assignmen06 */,
+				DC89419A1F5783B200113D2E /* Assignment06 */,
 			);
 		};
 /* End PBXProject section */
@@ -120,6 +136,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC8941A71F5783C100113D2E /* Dice.m in Sources */,
+				DC9319DD1F57E6D7008AD504 /* GameController.m in Sources */,
+				DC9319DA1F57DE9F008AD504 /* InputHandler.m in Sources */,
 				DC89419F1F5783B200113D2E /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -235,7 +254,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		DC8941961F5783B200113D2E /* Build configuration list for PBXProject "Assignmen06" */ = {
+		DC8941961F5783B200113D2E /* Build configuration list for PBXProject "Assignment06" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DC8941A01F5783B200113D2E /* Debug */,
@@ -244,13 +263,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DC8941A21F5783B200113D2E /* Build configuration list for PBXNativeTarget "Assignmen06" */ = {
+		DC8941A21F5783B200113D2E /* Build configuration list for PBXNativeTarget "Assignment06" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DC8941A31F5783B200113D2E /* Debug */,
 				DC8941A41F5783B200113D2E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

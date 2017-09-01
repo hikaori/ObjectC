@@ -9,5 +9,10 @@
 #import <Foundation/Foundation.h>
 
 @interface Dice : NSObject
+@property int faceValue;
+
+- (instancetype)init;
+- (void) roll;
+
 
 @end

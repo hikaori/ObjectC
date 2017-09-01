@@ -10,4 +10,19 @@
 
 @implementation Dice
 
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        self.faceValue = arc4random_uniform(6) + 1 ;
+    }
+    return self;
+}
+
+- (void) roll
+{
+    self.faceValue = arc4random_uniform(6) + 1 ;
+}
+
+
 @end
