@@ -76,13 +76,11 @@ dice4FaceValue:(int)dice4FaceValue dice5FaceValue:(int)dice5FaceValue{
     NSLog(@"now you dont have any holding Die");
 }
 -(void)showScore{
-    int score=0;
+    NSInteger score=0;
     for(NSNumber *allholdDices in holdDices){
-//        int score = 0;
-        score = score + (int)allholdDices;
-//        NSLog(@"score :%d",score);
+        score += [allholdDices floatValue];
     }
-    NSLog(@"score :%d",score);
+    NSLog(@"score :%ld",(long)score);
 }
 
 
